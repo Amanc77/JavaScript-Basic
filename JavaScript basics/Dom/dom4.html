@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <ul class="language">
+    <li>javascript</li>
+  </ul>
+</body>
+
+    <script>
+        function addlaunuage (langName){
+            const li = document.createElement('li')
+            li.innerHTML = `${langName}`
+            document.querySelector('.language').appendChild(li)
+        }
+        addlaunuage("python")
+        addlaunuage("c++")
+        addlaunuage("java")
+
+        //edit
+
+        const secondlag = document.querySelector('li:nth-child(2)')
+        const neweli = document.createElement('li')
+        neweli.textContent = 'c'
+        secondlag.replaceWith(neweli)
+
+    </script>
+
+</html>

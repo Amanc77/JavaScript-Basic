@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body>
+    <!-- <p> Dom impmentaion</p>
+    <h2>jai shree ram
+
+    </h2>
+
+    <ul>
+        <li>one </li>
+        <li>two</li>
+        <li>three</li>
+</ul>
+<br><br><br><br>
+<div class="day">monday</div>
+<div class="day">sunday</div>
+<div class="day">tuesday</div>
+<div class="day">wednesday</div> -->
+
+</body>
+<script>
+
+    // let name2 = document.querySelectorAll('.day')
+    // console.log(name2)
+
+
+
+    const myDiv = document.createElement('div')
+    myDiv.className = 'main'
+    myDiv.id = 'div1'
+    myDiv.style.backgroundColor = 'red'
+    const addtext = document.createTextNode ('this is div tag')
+    myDiv.appendChild(addtext)
+    console.log(myDiv)
+    document.body.appendChild(myDiv)
+
+    </script>
+</html>
